@@ -4,7 +4,17 @@ function startGame() {
     let  playerName: string = 'Audrey';
     logPlayer(playerName);
 
-    const messagesElements = document.getElementById('messages');
+    let messagesElements: HTMLElement | string;
+
+    if (typeof  messagesElements === 'string') {
+        return messagesElements;
+    } else {
+        return messagesElements;
+    }
+
+    messagesElements = 5;
+
+    messagesElements = document.getElementById('messages');
     messagesElements!.innerText = 'Welcome to MultiMath! Starting new game...';
 }
 

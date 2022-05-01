@@ -3,6 +3,17 @@
   "compilerOptions": {
     "removeComments": true,
     "module": "CommonJS",
+    "moduleResolution": "node",
+    "traceResolution": true,
+    "baseUrl": "./modules",
+    "paths": {
+      "my_lib": ["./customPatch"]
+    },
+    "rootDirs": [
+     "modules",
+      "src",
+      "tsc/modules"
+    ]
   },
   "files": [
     "./app.ts"

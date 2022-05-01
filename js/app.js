@@ -35,15 +35,6 @@ var logMessage = function (message) { return console.log(message); };
 function logError(err) {
     console.error(err);
 }
-var myResult = {
-    playerName: 'Marie',
-    score: 5,
-    problemCount: 5,
-    factor: 7,
-};
-var player = {
-    name: 'Daniel',
-    age: 0,
-    formatName: function () { return 'Dan'; },
-};
+var firstPlayer = new Player();
+firstPlayer.name = 'Lanier';
 //# sourceMappingURL=app.js.map
